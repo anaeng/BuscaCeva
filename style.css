@@ -4,8 +4,6 @@
 /* Estiliza o corpo da página */
 body {
     font-family: "Lora", serif; /* Define a fonte padrão como Lora */
-    background-image: url('ceva.jpg');
-    background-size: cover;
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
@@ -13,6 +11,8 @@ body {
     height: 100vh; /* Preenche a altura total da viewport */
     margin: 0;
     padding: 0;
+    background-image: url('ceva.jpg');
+    background-size: cover;
 }
 
 /* Estiliza os títulos h1 */
