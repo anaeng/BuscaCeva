@@ -43,29 +43,6 @@ function mostrarResultados(filtro) {
         linkMaisInfo.href = item.link;
         linkMaisInfo.target = '_blank';
         linkMaisInfo.rel = 'noopener noreferrer';
-        linkMaisInfo.textContent = 'Mais informações';
+       
 
-        itemResultado.appendChild(titulo);
-        itemResultado.appendChild(descricao);
-        itemResultado.appendChild(linkMaisInfo);
-
-        areaResultados.appendChild(itemResultado);
-    });
-}
-
-// Adiciona o evento de clique no botão de pesquisa
-botaoPesquisar.addEventListener('click', function(event) {
-    event.preventDefault(); // Evita o recarregamento da página
-
-    const termoPesquisa = campoPesquisa.value.trim(); // Obtém o valor do campo de pesquisa
-    if (termoPesquisa !== '') {
-        mostrarResultados(termoPesquisa); // Chama a função de exibição de resultados
-    } else {
-        // Se o campo estiver vazio, exibe todos os resultados
-        mostrarResultados('');
-    }
-});
-
-// Exibe todos os resultados ao carregar a página
-mostrarResultados('');
 
