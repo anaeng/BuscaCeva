@@ -4,7 +4,8 @@
 /* Estiliza o corpo da página */
 body {
     font-family: "Lora", serif; /* Define a fonte padrão como Lora */
-    background-color: #DDDDDD; /* Cor de fundo da página */
+    background-image: url('ceva.jpg');
+    background-size: cover;
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
