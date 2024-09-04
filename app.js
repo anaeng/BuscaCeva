@@ -1,12 +1,10 @@
-// Seleciona o botão de pesquisa e o campo de input
+
+       // Seleciona o botão de pesquisa e o campo de input
 const botaoPesquisar = document.querySelector('button');
 const campoPesquisa = document.querySelector('input');
 
 // Seleciona a área de resultados
 const areaResultados = document.querySelector('.resultados-pesquisa');
-
-// Limpa a área de resultados ao carregar a página
-areaResultados.innerHTML = ''; // Garante que a área de resultados comece vazia
 
 // Função para exibir os resultados na página
 function mostrarResultados(filtro) {
@@ -56,7 +54,7 @@ function mostrarResultados(filtro) {
     });
 }
 
-// Adiciona o evento de clique no botão de pesquisa
+// Adiciona o evento de clique no botão de pesquisa 
 botaoPesquisar.addEventListener('click', function(event) {
     event.preventDefault(); // Evita o recarregamento da página
 
@@ -65,7 +63,10 @@ botaoPesquisar.addEventListener('click', function(event) {
         mostrarResultados(termoPesquisa); // Chama a função de exibição de resultados
     } else {
         // Se o campo estiver vazio, exibe uma mensagem
-       
+        areaResultados.innerHTML = `<p>Por favor, insira um termo de pesquisa.</p>`;
+    }
+});
+
 
        
 
