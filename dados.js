@@ -63,22 +63,13 @@ let dados = [
         link: "https://www.clubedomalte.com.br/mybeerclass/brown-ale"
     },
     {
-        titulo: "Hefeweizen",
-        descricao: "A Hefeweizen é uma cerveja de trigo alemã, conhecida por suas características turvas e notas de banana e cravo. É uma cerveja refrescante e levemente ácida.",
-        origem: "Alemanha",
-        caracteristicas: "Turva, com notas de banana e cravo",
-        harmonizacao: "Combina com pratos de frutos do mar e saladas.",
-        curiosidades: "A Hefeweizen é feita com uma alta proporção de trigo e levedura que confere suas características distintivas.",
-        link: "https://pt.wikipedia.org/wiki/Hefeweizen"
-    },
-    {
         titulo: "Gose",
         descricao: "A Gose é uma cerveja ácida e levemente salgada, originária da Alemanha. Tem notas de coriandro e sal, e é frequentemente fermentada com lactobacilos.",
         origem: "Alemanha",
         caracteristicas: "Ácida, salgada, com notas de coriandro",
         harmonizacao: "Acompanha bem pratos de peixe e comidas picantes.",
         curiosidades: "É um estilo de cerveja antiga que foi redescoberto recentemente na cena das cervejas artesanais.",
-        link: "https://pt.wikipedia.org/wiki/Gose"
+        link: "https://cervejar.com/cerveja-salgada-existe-conheca-o-estilo-gose/"
     },
     {
         titulo: "Barleywine",
@@ -87,7 +78,7 @@ let dados = [
         caracteristicas: "Intensa, maltada, com alta graduação alcoólica",
         harmonizacao: "Combina bem com sobremesas e queijos fortes.",
         curiosidades: "Foi desenvolvida na Inglaterra no século XVIII e é conhecida por seu perfil de sabor complexo e robusto.",
-        link: "https://pt.wikipedia.org/wiki/Barleywine"
+        link: "https://www.clubedomalte.com.br/mybeerclass/barley-wine"
     },
     {
         titulo: "Lambic",
