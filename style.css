@@ -15,7 +15,36 @@ body {
     background-size: cover; /* Faz com que a imagem cubra toda a área do elemento */
     background-position: center center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita a repetição da imagem */
-    background-attachment: fixed; /* A imagem de fundo não se move ao rolar a página */   
+    background-attachment: fixed; /* A imagem de fundo não se move ao rolar a página */
+    
+ /* Responsividade da imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Adicionando flexbox para melhor controle do layout */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Centralizando o conteúdo */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Media queries para ajustar o layout em diferentes tamanhos de tela */
+@media (max-width: 768px) {
+  /* Estilos para dispositivos móveis */
+  body {
+    padding: 1rem;
+  }
+  .container {
+    padding: 1rem;
+  }
+  /* Outros ajustes para dispositivos móveis */
+}
 }
 
 /* Estiliza os títulos h1 */
