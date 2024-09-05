@@ -34,6 +34,18 @@ function pesquisar() {
     section.innerHTML = resultadosHtml;
 
     // Mostra a caixa de resultados
-    section.classList.add('mostrar');
+    section.classList.remove('oculto');
 }
+
+// Adiciona o evento de clique no botão
+document.addEventListener('DOMContentLoaded', function() {
+    const botaoPesquisar = document.querySelector('button');
+
+    // Inicialmente oculta a caixa de resultados
+    const section = document.getElementById("resultados-pesquisa");
+    section.classList.add('oculto');
+
+    // Adiciona o evento de clique ao botão de pesquisa
+    botaoPesquisar.addEventListener('click', pesquisar);
+});
 
