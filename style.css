@@ -114,14 +114,6 @@ section button {
     box-sizing: border-box; /* Inclui padding e border na largura total */
 }
 
-/* Estiliza a imagem ao lado da descrição */
-.item-resultado img {
-    width: 100px; /* Largura da imagem */
-    height: auto; /* Mantém a proporção da imagem */
-    margin-bottom: 1rem; /* Espaçamento abaixo da imagem */
-    border-radius: 0.3rem; /* Borda arredondada da imagem */
-}
-
 /* Estiliza a descrição dentro do item de resultado */
 .item-resultado .descricao-resultado {
     flex: 1; /* Faz a descrição ocupar o restante do espaço disponível */
