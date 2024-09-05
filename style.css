@@ -108,12 +108,13 @@ section button {
 
 /* Estiliza o rodapé da página */
 footer {
-    background-color: #f1f1f1; /* Cor de fundo do rodapé */
-    padding: 5px 10px; /* Reduz o padding (espaçamento interno) */
-    margin-top: 1rem; /* Ajusta a margem superior para reduzir o espaço acima do rodapé */
+    background-color: #dcdcdc; /* Tom de cinza claro */
+    padding: 5px 10px; /* Ajusta o padding (espaçamento interno) */
+    margin-top: 1rem; /* Ajusta a margem superior se necessário */
     text-align: center; /* Centraliza o texto */
-    font-size: 12px; /* Ajusta o tamanho da fonte se necessário */
-    color: #333; /* Ajusta a cor do texto */
+    font-size: 12px; /* Ajusta o tamanho da fonte */
+    color: #333; /* Cor do texto */
+    border-top: 1px solid #ccc; /* Adiciona uma borda superior sutil, se desejado */
 }
 
 footer p {
