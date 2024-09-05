@@ -2,10 +2,10 @@
 html, body {
     height: 100%; /* Garante que o HTML e o body ocupem a altura total da viewport */
     margin: 0;
+    font-family: "Lora", serif; /* Define a fonte padrão como Lora */
 }
 
 body {
-    font-family: "Lora", serif; /* Define a fonte padrão como Lora */
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     min-height: 100vh; /* Garante que o corpo ocupe pelo menos a altura da viewport */
@@ -67,6 +67,7 @@ section input {
     color: #45474B; /* Cor do texto */
     font-size: 1rem; /* Tamanho da fonte */
     box-sizing: border-box; /* Inclui padding e border na largura total */
+    background-color: #F5F5F5; /* Cor de fundo do input */
 }
 
 /* Estiliza os botões dentro das seções */
@@ -78,6 +79,12 @@ section button {
     color: #F5F7F8; /* Cor do texto do botão */
     font-size: 1rem; /* Tamanho da fonte */
     cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+}
+
+/* Efeito hover no botão */
+section button:hover {
+    background-color: #556B2F; /* Cor de fundo mais escura ao passar o mouse */
 }
 
 /* Estiliza a caixa de resultados da pesquisa */
@@ -89,6 +96,7 @@ section button {
     margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
     padding: 1rem; /* Espaçamento interno */
     border-radius: 0.6rem; /* Borda arredondada */
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco translúcido */
     box-sizing: border-box; /* Inclui padding e border na largura total */
 }
 
