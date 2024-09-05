@@ -68,14 +68,14 @@ section button {
 }
 
 /* Estiliza cada item de resultado */
-.item-resultado {
-    display: flex; /* Usa Flexbox para layout */
-    align-items: center; /* Alinha verticalmente o conteúdo */
-    background: #FFFFFF; /* Cor de fundo dos itens */
-    border-radius: 0.6rem; /* Borda arredondada */
+.resultados-pesquisa {
+    display: none; /* Esconde os resultados por padrão */
+    width: 60rem; /* Largura máxima da caixa de resultados */
+    height: 46vh; /* Altura máxima da caixa de resultados */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
     padding: 1rem; /* Espaçamento interno */
-    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    border-radius: 0.6rem; /* Borda arredondada */
 }
 
 /* Estiliza a imagem ao lado da descrição */
