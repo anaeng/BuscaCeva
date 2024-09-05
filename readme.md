@@ -24,4 +24,4 @@ Contribuições são bem-vindas! Se você encontrar algum bug ou tiver alguma su
 
 **Agradecimentos:**
 
-Agradeço à Alura e à comunidade open source pelo conhecimento e suport
+Agradeço à Alura, ao Google Gemini e a toda a comunidade open source pelo conhecimento e suporte contínuos.
