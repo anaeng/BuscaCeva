@@ -87,7 +87,7 @@ let dados = [
         caracteristicas: "Ácida, complexa, frequentemente com frutas",
         harmonizacao: "Acompanha bem queijos azuis e sobremesas de frutas.",
         curiosidades: "É fermentada com leveduras selvagens e bactérias presentes no ambiente, o que dá ao estilo seu caráter único.",
-        link: "https://pt.wikipedia.org/wiki/Lambic"
+        link: "https://cervejaemalte.com.br/blog/as-principais-caracteristicas-da-lambic/"
     },
     {
         titulo: "Kölsch",
@@ -96,16 +96,7 @@ let dados = [
         caracteristicas: "Leve, refrescante, com notas frutadas",
         harmonizacao: "Combina bem com pratos leves e saladas.",
         curiosidades: "É uma cerveja tradicional da cidade de Colônia e é servida em copos estreitos e altos.",
-        link: "https://pt.wikipedia.org/wiki/K%C3%B6lsch"
-    },
-    {
-        titulo: "Rye Beer",
-        descricao: "A Rye Beer é uma cerveja que utiliza centeio em sua formulação, conferindo um sabor picante e uma textura distinta. Pode variar de leve a encorpada.",
-        origem: "Estados Unidos",
-        caracteristicas: "Picante, com notas de centeio",
-        harmonizacao: "Acompanha bem pratos de carne defumada e queijos envelhecidos.",
-        curiosidades: "O uso de centeio é menos comum na cerveja, mas dá uma característica única ao perfil de sabor.",
-        link: "https://pt.wikipedia.org/wiki/Rye_Beer"
+        link: "https://ocaneco.com.br/historia-da-cerveja-kolsch/"
     },
     {
         titulo: "Cream Ale",
@@ -114,7 +105,7 @@ let dados = [
         caracteristicas: "Leve, suave, com toque cremoso",
         harmonizacao: "Combina bem com pratos leves e aperitivos.",
         curiosidades: "Foi desenvolvida para oferecer uma opção refrescante e fácil de beber, ideal para climas quentes.",
-        link: "https://pt.wikipedia.org/wiki/Cream_Ale"
+        link: "https://www.cervejamarimbondo.com/post/cream-ale#google_vignette"
     }
 ];
 
