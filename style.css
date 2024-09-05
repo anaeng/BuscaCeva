@@ -85,5 +85,35 @@ section button {
     color: #30475E; /* Cor do texto dos links */
 }
 
-/* Estiliza 
+/* Estiliza os links quando são passados o mouse sobre */
+.item-resultado a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+    color: #45474B; /* Cor do texto */
+    margin: 0.5rem 0; /* Margem acima e abaixo */
+}
+
+/* Estiliza a mensagem de erro */
+.mensagem-erro {
+    color: red; /* Cor do texto da mensagem de erro */
+    margin-top: 0.5rem; /* Ajusta a margem superior para posicionar o texto mais próximo do botão */
+    font-size: 0.9rem; /* Ajusta o tamanho da fonte se necessário */
+}
+
+/* Estiliza o rodapé da página */
+footer {
+    background-color: #f1f1f1; /* Cor de fundo do rodapé */
+    padding: 5px 10px; /* Reduz o padding (espaçamento interno) */
+    margin-top: 1rem; /* Ajusta a margem superior para reduzir o espaço acima do rodapé */
+    text-align: center; /* Centraliza o texto */
+    font-size: 12px; /* Ajusta o tamanho da fonte se necessário */
+    color: #333; /* Ajusta a cor do texto */
+}
+
+footer p {
+    margin: 0; /* Remove a margem padrão dos parágrafos */
+}
 
