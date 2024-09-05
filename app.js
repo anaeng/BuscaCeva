@@ -81,9 +81,3 @@ botaoPesquisar.addEventListener('click', function(event) {
     }
 ];
 
-ChatGPT said:
-ChatGPT
-Se você está vendo os resultados na tela sem precisar procurar, pode ser que a função mostrarResultados esteja sendo chamada automaticamente quando a página carrega, ou o estado inicial da área de resultados não está correto.
-
-Aqui estão algumas sugestões para corrigir o problema:
-
