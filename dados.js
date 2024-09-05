@@ -1,5 +1,5 @@
 let dados = [
-    // Estilos existentes
+    // Estilos de Cervejas
     {
         titulo: "Pilsen",
         descricao: "A Pilsen é um estilo de cerveja de origem tcheca, conhecida por seu sabor leve e refrescante. Tem uma cor clara e é feita com lúpulo que dá um leve amargor. Ideal para quem gosta de cervejas suaves e fáceis de beber.",
