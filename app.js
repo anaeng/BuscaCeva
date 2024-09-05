@@ -1,74 +1,24 @@
-// Seleciona o botão de pesquisa e o campo de input
-const botaoPesquisar = document.querySelector('button');
-const campoPesquisa = document.querySelector('input');
+function pesquisar() {
+    // Obtém a seção HTML onde os resultados serão exibidos
+    let section = document.getElementById("resultados-pesquisa");
 
-// Seleciona a área de resultados
-const areaResultados = document.querySelector('.resultados-pesquisa');
+    // Inicializa uma string vazia para armazenar os resultados
+    let resultados = "";
 
-// Adiciona o evento de clique no botão de pesquisa
-botaoPesquisar.addEventListener('click', function(event) {
-    event.preventDefault(); // Evita o recarregamento da página
-
-    const termoPesquisa = campoPesquisa.value.trim(); // Obtém o valor do campo de pesquisa
-    console.log('Termo de pesquisa:', termoPesquisa); // Depuração: exibe o termo de pesquisa
-
-    if (termoPesquisa !== '') {
-        mostrarResultados(termoPesquisa); // Chama a função de exibição de resultados
-    } else {
-        // Se o campo estiver vazio, exibe uma mensagem
-        areaResultados.innerHTML = `<p>Por favor, insira um termo de pesquisa.</p>`;
-    }
-});
-
-// Função para exibir os resultados na página
-function mostrarResultados(filtro) {
-    console.log('Filtro aplicado:', filtro); // Depuração: exibe o filtro aplicado
-
-    // Limpa os resultados anteriores
-    areaResultados.innerHTML = '';
-
-    // Filtra os dados com base no termo de pesquisa
-    const resultadosFiltrados = dados.filter(item =>
-        item.titulo.toLowerCase().includes(filtro.toLowerCase())
-    );
-
-    console.log('Resultados filtrados:', resultadosFiltrados); // Depuração: exibe os resultados filtrados
-
-    // Se não houver resultados, exibe uma mensagem
-    if (resultadosFiltrados.length === 0) {
-        areaResultados.innerHTML = `<p>Nenhum resultado encontrado.</p>`;
-        return;
+    // Itera sobre cada dado da lista de dados
+    for (let dado of dados) {
+        // Cria um novo elemento HTML para cada resultado
+        resultados += `
+            <div class="item-resultado">
+                <h2>
+                    <a href="#" target="_blank">${dado.titulo}</a>
+                </h2>
+                <p class="descricao-meta">${dado.descricao}</p>
+                <a href=${dado.link} target="_blank">Mais informações</a>
+            </div>
+        `;
     }
 
-    // Percorre os resultados filtrados e cria os elementos HTML para cada item
-    resultadosFiltrados.forEach(item => {
-        const itemResultado = document.createElement('div');
-        itemResultado.classList.add('item-resultado');
-
-        const titulo = document.createElement('h2');
-        const link = document.createElement('a');
-        link.href = item.link;
-        link.target = '_blank';
-        link.rel = 'noopener noreferrer';
-        link.textContent = item.titulo;
-
-        titulo.appendChild(link);
-
-        const descricao = document.createElement('p');
-        descricao.classList.add('descricao-meta');
-        descricao.textContent = item.descricao;
-
-        const linkMaisInfo = document.createElement('a');
-        linkMaisInfo.href = item.link;
-        linkMaisInfo.target = '_blank';
-        linkMaisInfo.rel = 'noopener noreferrer';
-        linkMaisInfo.textContent = 'Mais informações';
-
-        itemResultado.appendChild(titulo);
-        itemResultado.appendChild(descricao);
-        itemResultado.appendChild(linkMaisInfo);
-
-        areaResultados.appendChild(itemResultado);
-    });
+    // Atribui os resultados gerados à seção HTML
+    section.innerHTML = resultados;
 }
-
