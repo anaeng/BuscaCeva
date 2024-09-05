@@ -20,7 +20,6 @@ function pesquisar() {
                     <p><strong>Características:</strong> ${dado.caracteristicas}</p>
                     <p><strong>Harmonização:</strong> ${dado.harmonizacao}</p>
                     <p><strong>Curiosidades:</strong> ${dado.curiosidades}</p>
-                    <a href="${dado.link}" target="_blank">Mais informações</a>
                 </div>
             `;
         }
