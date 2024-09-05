@@ -1,21 +1,24 @@
-/* Importa a fonte Lora do Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
-
 /* Estiliza o corpo da página */
+html, body {
+    height: 100%; /* Garante que o HTML e o body ocupem a altura total da viewport */
+    margin: 0;
+}
+
 body {
     font-family: "Lora", serif; /* Define a fonte padrão como Lora */
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
-    align-items: center; /* Centraliza os itens horizontalmente */
-    justify-content: center; /* Centraliza os itens verticalmente */
     min-height: 100vh; /* Garante que o corpo ocupe pelo menos a altura da viewport */
-    margin: 0;
-    padding: 0;
     background-image: url('ceva.jpg');
     background-size: cover; /* Faz com que a imagem cubra toda a área do elemento */
     background-position: center center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita a repetição da imagem */
     background-attachment: fixed; /* A imagem de fundo não se move ao rolar a página */
+}
+
+/* Estiliza a área principal */
+main {
+    flex: 1; /* Faz com que o main cresça para preencher o espaço disponível */
 }
 
 /* Centralizando o conteúdo */
@@ -153,19 +156,11 @@ section button {
 footer {
     background-color: #dcdcdc; /* Tom de cinza claro */
     padding: 5px 10px; /* Ajusta o padding (espaçamento interno) */
-    margin-top: 1rem; /* Ajusta a margem superior se necessário */
     text-align: center; /* Centraliza o texto */
     font-size: 12px; /* Ajusta o tamanho da fonte */
     color: #333; /* Cor do texto */
     border-top: 1px solid #ccc; /* Adiciona uma borda superior sutil */
     width: 100%; /* Garante que o rodapé ocupe a largura total disponível */
     box-sizing: border-box; /* Inclui padding e border na largura total */
-    position: absolute; /* Garante que o rodapé esteja fixado na parte inferior */
-    bottom: 0; /* Posiciona o rodapé no fundo da página */
-}
-
-/* Estiliza o conteúdo do rodapé */
-footer p {
-    margin: 0; /* Remove a margem padrão dos parágrafos */
 }
 
