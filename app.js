@@ -3,8 +3,8 @@ function pesquisar() {
     // Obtém a seção HTML onde os resultados serão exibidos
     let section = document.getElementById("resultados-pesquisa");
 
-    // Obtém o valor da caixa de pesquisa
-    let pesquisa = document.querySelector('input[type="text"]').value.toLowerCase();
+    // Obtém o valor da caixa de pesquisa usando o ID
+    let pesquisa = document.getElementById('pesquisa-input').value.toLowerCase();
 
     // Inicializa uma string vazia para armazenar os resultados
     let resultadosHtml = "";
@@ -38,7 +38,3 @@ function pesquisar() {
     section.classList.add('mostrar');
 }
 
-// Adiciona o ouvinte de evento ao botão de pesquisa
-document.querySelector('section button').addEventListener('click', function() {
-    pesquisar();
-});
