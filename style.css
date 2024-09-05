@@ -80,11 +80,6 @@ section button {
     cursor: pointer; /* Muda o cursor para indicar que é clicável */
 }
 
-/* Adiciona uma classe para ocultar a caixa de resultados */
-.oculto {
-    display: none; /* Esconde o elemento */
-}
-
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
     width: 100%; /* Largura total disponível */
@@ -100,6 +95,10 @@ section button {
     display: none; /* Esconde a caixa de resultados inicialmente */
 }
 
+/* Adiciona uma classe para ocultar a caixa de resultados */
+.oculto {
+    display: none; /* Esconde o elemento */
+}
 /* Estiliza cada item de resultado */
 .item-resultado {
     display: flex; /* Usa Flexbox para layout */
