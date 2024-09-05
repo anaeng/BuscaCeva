@@ -2,8 +2,8 @@ function pesquisar() {
     // Obtém a seção HTML onde os resultados serão exibidos
     const section = document.getElementById("resultados-pesquisa");
     
-    // Obtém o valor do campo de pesquisa
-    const input = document.querySelector('section input');
+    // Obtém o valor do campo de pesquisa usando o ID correto
+    const input = document.getElementById('busca');
     const busca = input.value.trim().toLowerCase();
 
     // Adiciona um log para depuração
@@ -39,7 +39,4 @@ function pesquisar() {
     // Atribui os resultados gerados à seção HTML
     section.innerHTML = resultadosHtml;
 }
-
-// Certifique-se de que a função é chamada quando o botão é clicado
-document.querySelector('button').addEventListener('click', pesquisar);
 
