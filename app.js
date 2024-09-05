@@ -11,7 +11,8 @@ function pesquisar() {
 
     // Itera sobre cada dado da lista de dados
     for (let dado of dados) {
-        if (dado.titulo.toLowerCase().includes(pesquisa)) {
+        // Se o campo de pesquisa estiver vazio ou o título incluir o texto da pesquisa, adiciona o resultado
+        if (pesquisa === "" || dado.titulo.toLowerCase().includes(pesquisa)) {
             resultadosHtml += `
                 <div class="item-resultado">
                     <h2><a href="${dado.link}" target="_blank">${dado.titulo}</a></h2>
@@ -33,7 +34,7 @@ function pesquisar() {
     // Atribui os resultados gerados à seção HTML
     section.innerHTML = resultadosHtml;
 
-    // Mostra a caixa de resultados
+    // Remove a classe 'oculto' para mostrar a seção de resultados
     section.classList.remove('oculto');
 }
 
