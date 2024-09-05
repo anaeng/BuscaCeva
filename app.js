@@ -5,8 +5,25 @@ const campoPesquisa = document.querySelector('input');
 // Seleciona a área de resultados
 const areaResultados = document.querySelector('.resultados-pesquisa');
 
+// Adiciona o evento de clique no botão de pesquisa
+botaoPesquisar.addEventListener('click', function(event) {
+    event.preventDefault(); // Evita o recarregamento da página
+
+    const termoPesquisa = campoPesquisa.value.trim(); // Obtém o valor do campo de pesquisa
+    console.log('Termo de pesquisa:', termoPesquisa); // Depuração: exibe o termo de pesquisa
+
+    if (termoPesquisa !== '') {
+        mostrarResultados(termoPesquisa); // Chama a função de exibição de resultados
+    } else {
+        // Se o campo estiver vazio, exibe uma mensagem
+        areaResultados.innerHTML = `<p>Por favor, insira um termo de pesquisa.</p>`;
+    }
+});
+
 // Função para exibir os resultados na página
 function mostrarResultados(filtro) {
+    console.log('Filtro aplicado:', filtro); // Depuração: exibe o filtro aplicado
+
     // Limpa os resultados anteriores
     areaResultados.innerHTML = '';
 
@@ -14,6 +31,8 @@ function mostrarResultados(filtro) {
     const resultadosFiltrados = dados.filter(item =>
         item.titulo.toLowerCase().includes(filtro.toLowerCase())
     );
+
+    console.log('Resultados filtrados:', resultadosFiltrados); // Depuração: exibe os resultados filtrados
 
     // Se não houver resultados, exibe uma mensagem
     if (resultadosFiltrados.length === 0) {
@@ -52,17 +71,4 @@ function mostrarResultados(filtro) {
         areaResultados.appendChild(itemResultado);
     });
 }
-
-// Adiciona o evento de clique no botão de pesquisa
-botaoPesquisar.addEventListener('click', function(event) {
-    event.preventDefault(); // Evita o recarregamento da página
-
-    const termoPesquisa = campoPesquisa.value.trim(); // Obtém o valor do campo de pesquisa
-    if (termoPesquisa !== '') {
-        mostrarResultados(termoPesquisa); // Chama a função de exibição de resultados
-    } else {
-        // Se o campo estiver vazio, exibe uma mensagem
-        areaResultados.innerHTML = `<p>Por favor, insira um termo de pesquisa.</p>`;
-    }
-});
 
