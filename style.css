@@ -86,10 +86,11 @@ section button {
     max-width: 60rem; /* Largura máxima da caixa de resultados */
     height: 46vh; /* Altura máxima da caixa de resultados */
     overflow-y: auto; /* Adiciona rolagem vertical se necessário */
-    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
+    margin: 1rem auto; /* Centraliza a caixa de resultados e adiciona espaçamento superior */
     padding: 1rem; /* Espaçamento interno */
     border-radius: 0.6rem; /* Borda arredondada */
     box-sizing: border-box; /* Inclui padding e border na largura total */
+    background-color: #ffffff; /* Cor de fundo branca */
 }
 
 /* Estiliza cada item de resultado */
@@ -103,6 +104,7 @@ section button {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
     width: 100%; /* Largura total disponível */
     box-sizing: border-box; /* Inclui padding e border na largura total */
+    max-width: 100%; /* Impede que o item ultrapasse a largura do container */
 }
 
 /* Estiliza a imagem ao lado da descrição */
