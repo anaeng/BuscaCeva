@@ -85,28 +85,5 @@ section button {
     color: #30475E; /* Cor do texto dos links */
 }
 
-/* Estiliza os links quando são passados o mouse sobre */
-.item-resultado a:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
-}
-
-/* Estiliza a descrição meta dentro dos itens de resultado */
-.descricao-meta {
-    color: #45474B; /* Cor do texto */
-    margin: 0.5rem 0; /* Margem acima e abaixo */
-}
-
-/* Estiliza o rodapé da página */
-footer {
-    background-color: #f1f1f1; /* Cor de fundo do rodapé */
-    padding: 10px 20px; /* Ajusta o padding (espaçamento interno) */
-    margin-top: 20px; /* Ajusta a margem superior se necessário */
-    text-align: center; /* Centraliza o texto */
-    font-size: 14px; /* Ajusta o tamanho da fonte */
-    color: #333; /* Ajusta a cor do texto */
-}
-
-footer p {
-    margin: 0; /* Remove a margem padrão dos parágrafos */
-}
+/* Estiliza 
 
