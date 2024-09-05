@@ -163,7 +163,7 @@ footer {
     text-align: center; /* Centraliza o texto */
     font-size: 15px; /* Ajusta o tamanho da fonte */
     line-height: 1.2; /* Ajusta o espaçamento entre linhas para reduzir a altura */
-    color: #fffff; /* Cor do texto */
+    color: #000000; /* Cor do texto */
     border-top: 1px solid #ccc; /* Adiciona uma borda superior sutil */
     width: 100%; /* Garante que o rodapé ocupe a largura total disponível */
     box-sizing: border-box; /* Inclui padding e border na largura total */
