@@ -12,7 +12,10 @@ body {
     margin: 0;
     padding: 0;
     background-image: url('ceva.jpg');
-    background-size: cover;
+    background-size: cover; /* Faz com que a imagem cubra toda a área do elemento */
+    background-position: center center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-attachment: fixed; /* A imagem de fundo não se move ao rolar a página */
 }
 
 /* Estiliza os títulos h1 */
