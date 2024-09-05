@@ -2,7 +2,10 @@
 function pesquisar() {
     // Obtém a seção HTML onde os resultados serão exibidos
     let section = document.getElementById("resultados-pesquisa");
-    
+
+    // Obtém o valor da caixa de pesquisa
+    let pesquisa = document.querySelector('input[type="text"]').value.toLowerCase();
+
     // Inicializa uma string vazia para armazenar os resultados
     let resultadosHtml = "";
 
@@ -23,10 +26,19 @@ function pesquisar() {
         }
     }
 
+    // Se não houver resultados, exibe uma mensagem
     if (resultadosHtml === "") {
         resultadosHtml = `<p class="mensagem-erro">Nenhum resultado encontrado para "${pesquisa}".</p>`;
     }
 
+    // Atribui os resultados gerados à seção HTML
     section.innerHTML = resultadosHtml;
+
+    // Mostra a caixa de resultados
     section.classList.add('mostrar');
 }
+
+// Adiciona o ouvinte de evento ao botão de pesquisa
+document.querySelector('section button').addEventListener('click', function() {
+    pesquisar();
+});
