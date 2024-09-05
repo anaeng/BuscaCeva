@@ -17,3 +17,11 @@ O **BuscaCeva** é uma plataforma interativa desenvolvida para entusiastas da ce
 1. Acesse o site https://anaeng.github.io/cevas/
 2. Explore os estilos de cerveja disponíveis ou use a barra de busca para encontrar o estilo que você deseja.
 3. Clique em "Mais Informações" para ver detalhes completos sobre cada estilo de cerveja.
+
+**Contribuições:**
+
+Contribuições são bem-vindas! Se você encontrar algum bug ou tiver alguma sugestão, por favor, abra uma issue.
+
+**Agradecimentos:**
+
+Agradeço à Alura e à comunidade open source pelo conhecimento e suport
