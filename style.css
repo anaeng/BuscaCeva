@@ -69,6 +69,8 @@ section button {
 
 /* Estiliza cada item de resultado */
 .item-resultado {
+    display: flex; /* Usa Flexbox para layout */
+    align-items: center; /* Alinha verticalmente o conteúdo */
     background: #FFFFFF; /* Cor de fundo dos itens */
     border-radius: 0.6rem; /* Borda arredondada */
     padding: 1rem; /* Espaçamento interno */
@@ -76,20 +78,34 @@ section button {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
 }
 
-/* Estiliza os títulos dentro dos itens de resultado */
-.item-resultado h2 {
-    font-size: 1.5rem; /* Tamanho da fonte */
-    color: #222831; /* Cor do texto */
+/* Estiliza a imagem ao lado da descrição */
+.item-resultado img {
+    width: 100px; /* Largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 1rem; /* Espaçamento entre a imagem e a descrição */
+    border-radius: 0.3rem; /* Borda arredondada da imagem */
 }
 
-/* Estiliza os links dentro dos itens de resultado */
-.item-resultado a {
+/* Estiliza a descrição dentro do item de resultado */
+.item-resultado .descricao-resultado {
+    flex: 1; /* Faz a descrição ocupar o restante do espaço disponível */
+}
+
+/* Estiliza o título dentro da descrição */
+.item-resultado .descricao-resultado h2 {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    color: #222831; /* Cor do texto */
+    margin-top: 0; /* Remove a margem superior do título */
+}
+
+/* Estiliza o link dentro da descrição */
+.item-resultado .descricao-resultado a {
     text-decoration: none; /* Remove o sublinhado padrão dos links */
     color: #30475E; /* Cor do texto dos links */
 }
 
-/* Estiliza os links quando são passados o mouse sobre */
-.item-resultado a:hover {
+/* Estiliza o link quando passa o mouse sobre */
+.item-resultado .descricao-resultado a:hover {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
@@ -120,4 +136,5 @@ footer {
 footer p {
     margin: 0; /* Remove a margem padrão dos parágrafos */
 }
+
 
