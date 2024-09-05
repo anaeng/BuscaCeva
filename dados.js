@@ -7,7 +7,7 @@ let dados = [
         caracteristicas: "Leve, clara, com amargor suave",
         harmonizacao: "Acompanha bem pratos leves como saladas e frutos do mar.",
         curiosidades: "Foi criada na cidade de Pilsen, em 1842, e é uma das cervejas mais consumidas no mundo.",
-        link: "https://pt.wikipedia.org/wiki/Cerveja_Pilsner"
+        link: "https://pt.wikipedia.org/wiki/Cerveja_Pilsen#:~:text=Pilsen%20ou%20Pilsener%20%C3%A9%20um,Checa)%20por%20volta%20de%201840."
     },
     {
         titulo: "IPA (India Pale Ale)",
@@ -16,7 +16,7 @@ let dados = [
         caracteristicas: "Amarga, com notas frutadas e especiarias",
         harmonizacao: "Combina com pratos picantes, carnes grelhadas e queijos fortes.",
         curiosidades: "Foi desenvolvida no século XIX para suportar a longa viagem até a Índia, daí o nome 'India Pale Ale'.",
-        link: "https://pt.wikipedia.org/wiki/India_Pale_Ale"
+        link: "https://centralbrew.com.br/blog/serie-estilos-de-cerveja-conheca-a-india-pale-ale-ipa/"
     },
     {
         titulo: "Stout",
@@ -25,7 +25,7 @@ let dados = [
         caracteristicas: "Escura, com notas de café e chocolate",
         harmonizacao: "Ótima com sobremesas, especialmente chocolate, e pratos à base de carne.",
         curiosidades: "O estilo Stout foi popularizado por Arthur Guinness, fundador da cervejaria Guinness, no século XVIII.",
-        link: "https://pt.wikipedia.org/wiki/Stout"
+        link: "https://gastronomiacarioca.zonasul.com.br/stout-cerveja/#:~:text=Caracter%C3%ADsticas%20de%20uma%20Stout,sabores%20de%20cacau%20e%20caf%C3%A9."
     },
     {
         titulo: "Weissbier",
@@ -34,7 +34,7 @@ let dados = [
         caracteristicas: "Turva, com notas de banana e cravo",
         harmonizacao: "Combina bem com pratos de peixe e pratos da cozinha alemã, como salsichas.",
         curiosidades: "É uma das cervejas mais antigas da Alemanha, com uma tradição que remonta ao século XVI.",
-        link: "https://pt.wikipedia.org/wiki/Weissbier"
+        link: "https://pt.wikipedia.org/wiki/Weizenbier"
     },
     {
         titulo: "Saison",
@@ -43,9 +43,7 @@ let dados = [
         caracteristicas: "Frutada, picante, com notas especiadas",
         harmonizacao: "Acompanha pratos com especiarias, pratos de legumes e queijos curados.",
         curiosidades: "Originalmente, era feita para ser consumida durante o verão e distribuída para os trabalhadores das fazendas na Bélgica.",
-        link: "https://pt.wikipedia.org/wiki/Saison"
-    },
-    // Novos estilos
+        link: "https://centralbrew.com.br/blog/serie-estilos-de-cerveja-conheca-a-saison/"
     {
         titulo: "Amber Ale",
         descricao: "A Amber Ale é uma cerveja de cor âmbar a cobre, com um equilíbrio entre malte e lúpulo. Possui um sabor suave de caramelo e um leve amargor.",
@@ -62,7 +60,7 @@ let dados = [
         caracteristicas: "Maltada, com notas de nozes e chocolate",
         harmonizacao: "Acompanha bem pratos de carne assada e pratos de inverno.",
         curiosidades: "O estilo foi popularizado por cervejarias inglesas no século XVIII e é conhecido por sua complexidade de sabor.",
-        link: "https://pt.wikipedia.org/wiki/Brown_Ale"
+        link: "https://www.clubedomalte.com.br/mybeerclass/brown-ale"
     },
     {
         titulo: "Hefeweizen",
