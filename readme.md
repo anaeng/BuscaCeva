@@ -1,7 +1,7 @@
 # BuscaCeva - Descubra o Mundo das Cervejas
 
 **Descrição do Projeto:**
-O **BuscaCeva** é uma plataforma interativa desenvolvida para entusiastas da cerveja. O site oferece uma maneira fácil e divertida de explorar uma vasta gama de estilos de cervejas, desde os tradicionais até os mais raros e inovadores. Com uma interface amigável, os usuários podem pesquisar por estilo de cerveja e acessar informações detalhadas sobre cada um. Ideal tanto para conhecedores quanto para iniciantes, o BuscaCeva visa enriquecer o conhecimento dos usuários e aprimorar sua experiência na apreciação da cerveja.
+O **BuscaCeva** é uma plataforma interativa desenvolvida para entusiastas da cerveja. O site oferece uma maneira fácil e divertida de explorar uma gama de estilos de cervejas, desde os tradicionais até os peculiares. Com uma interface amigável, os usuários podem pesquisar por estilo de cerveja e acessar informações detalhadas sobre cada um. Ideal tanto para conhecedores quanto para iniciantes, o BuscaCeva visa enriquecer o conhecimento dos usuários e aprimorar sua experiência na apreciação da cerveja.
 
 **Funcionalidades Principais:**
 - **Busca por Estilos de Cerveja:** Filtre e explore uma ampla gama de estilos, como Pilsner, IPA, Stout, e muito mais.
@@ -11,7 +11,7 @@ O **BuscaCeva** é uma plataforma interativa desenvolvida para entusiastas da ce
 
 **Tecnologias Utilizadas:**
 - **Frontend:** HTML, CSS, JavaScript
-- **APIs externas:** Google Gemini (para informações detalhadas sobre estilos de cerveja)
+- **APIs externas:** Google Gemini 
 
 **Como Usar:**
 1. Acesse o site [BuscaCeva](#).
