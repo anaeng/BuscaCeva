@@ -42,7 +42,7 @@ body {
 /* Estiliza os títulos h1 */
 h1 {
     font-size: 2.5rem; /* Tamanho da fonte */
-    color: #6B8E23; /* Verde Oliva - cor do texto */
+    color: #006400; /* Verde Escuro - cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     letter-spacing: 0.4rem; /* Espaçamento entre letras */
 }
