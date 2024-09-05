@@ -1,23 +1,12 @@
 // Função de pesquisa
 function pesquisar() {
+    // Obtém a seção HTML onde os resultados serão exibidos
     let section = document.getElementById("resultados-pesquisa");
-    let pesquisa = document.getElementById('pesquisa-input').value.toLowerCase();
-
-    let dados = [
-        {
-            titulo: "Pilsen",
-            descricao: "A Pilsen é um estilo de cerveja de origem tcheca, conhecida por seu sabor leve e refrescante. Tem uma cor clara e é feita com lúpulo que dá um leve amargor.",
-            origem: "República Tcheca",
-            caracteristicas: "Leve, clara, com amargor suave",
-            harmonizacao: "Acompanha bem pratos leves como saladas e frutos do mar.",
-            curiosidades: "Foi criada na cidade de Pilsen, em 1842.",
-            link: "https://pt.wikipedia.org/wiki/Cerveja_Pilsen"
-        }
-        // Adicione mais estilos de cerveja conforme necessário
-    ];
-
+    
+    // Inicializa uma string vazia para armazenar os resultados
     let resultadosHtml = "";
 
+    // Itera sobre cada dado da lista de dados
     for (let dado of dados) {
         if (dado.titulo.toLowerCase().includes(pesquisa)) {
             resultadosHtml += `
