@@ -1,93 +1,99 @@
-// Seleciona o botão de pesquisa e o campo de input
-const botaoPesquisar = document.querySelector('button');
-const campoPesquisa = document.querySelector('input');
+document.addEventListener("DOMContentLoaded", function() {
+    const searchButton = document.getElementById("search-button");
+    const searchInput = document.getElementById("search-input");
+    const resultadosPesquisa = document.querySelector(".resultados-pesquisa");
 
-// Seleciona a área de resultados
-const areaResultados = document.querySelector('.resultados-pesquisa');
+    // Importa os dados
+    let dados = [
+        {
+            titulo: "Pilsen",
+            descricao: "A Pilsen é um estilo de cerveja de origem tcheca, conhecida por seu sabor leve e refrescante. Tem uma cor clara e é feita com lúpulo que dá um leve amargor. Ideal para quem gosta de cervejas suaves e fáceis de beber.",
+            origem: "República Tcheca",
+            caracteristicas: "Leve, clara, com amargor suave",
+            harmonizacao: "Acompanha bem pratos leves como saladas e frutos do mar.",
+            curiosidades: "Foi criada na cidade de Pilsen, em 1842, e é uma das cervejas mais consumidas no mundo.",
+            link: "https://pt.wikipedia.org/wiki/Cerveja_Pilsner"
+        },
+        {
+            titulo: "IPA (India Pale Ale)",
+            descricao: "A IPA é um estilo de cerveja originário da Inglaterra, caracterizado pelo seu alto teor de lúpulo, que confere um sabor marcante e aromas intensos de frutas e especiarias. Geralmente possui um amargor mais forte e um teor alcoólico mais elevado.",
+            origem: "Inglaterra",
+            caracteristicas: "Amarga, com notas frutadas e especiarias",
+            harmonizacao: "Combina com pratos picantes, carnes grelhadas e queijos fortes.",
+            curiosidades: "Foi desenvolvida no século XIX para suportar a longa viagem até a Índia, daí o nome 'India Pale Ale'.",
+            link: "https://pt.wikipedia.org/wiki/India_Pale_Ale"
+        },
+        {
+            titulo: "Stout",
+            descricao: "A Stout é um estilo de cerveja escura e encorpada, com notas de café, chocolate e toffee. Originária da Inglaterra, é conhecida pelo seu sabor robusto e complexidade. Ideal para quem gosta de cervejas com sabores intensos.",
+            origem: "Inglaterra",
+            caracteristicas: "Escura, com notas de café e chocolate",
+            harmonizacao: "Ótima com sobremesas, especialmente chocolate, e pratos à base de carne.",
+            curiosidades: "O estilo Stout foi popularizado por Arthur Guinness, fundador da cervejaria Guinness, no século XVIII.",
+            link: "https://pt.wikipedia.org/wiki/Stout"
+        },
+        {
+            titulo: "Weissbier",
+            descricao: "A Weissbier, também conhecida como cerveja de trigo, é um estilo de cerveja de origem alemã. É turva e tem um sabor frutado, com notas de banana e cravo devido ao uso de leveduras especiais. É refrescante e leve, ideal para o verão.",
+            origem: "Alemanha",
+            caracteristicas: "Turva, com notas de banana e cravo",
+            harmonizacao: "Combina bem com pratos de peixe e pratos da cozinha alemã, como salsichas.",
+            curiosidades: "É uma das cervejas mais antigas da Alemanha, com uma tradição que remonta ao século XVI.",
+            link: "https://pt.wikipedia.org/wiki/Weissbier"
+        },
+        {
+            titulo: "Saison",
+            descricao: "A Saison é uma cerveja de origem belga, conhecida por suas características frutadas e picantes. Feita com leveduras de fermentação selvagem, tem um sabor complexo e é frequentemente condimentada com especiarias.",
+            origem: "Bélgica",
+            caracteristicas: "Frutada, picante, com notas especiadas",
+            harmonizacao: "Acompanha pratos com especiarias, pratos de legumes e queijos curados.",
+            curiosidades: "Originalmente, era feita para ser consumida durante o verão e distribuída para os trabalhadores das fazendas na Bélgica.",
+            link: "https://pt.wikipedia.org/wiki/Saison"
+        }
+    ];
 
-// Dados dos estilos de cerveja
-const estilosCerveja = {
-    "Pilsen": {
-        origem: "República Tcheca",
-        caracteristicas: "Leve, refrescante, cor dourada clara e sabor amargo sutil.",
-        harmonizacao: "Ideal com pratos leves, como saladas, frutos do mar e carnes brancas.",
-        curiosidades: "A primeira Pilsen foi criada em 1842 na cidade de Plzeň, e deu nome ao estilo Pilsner."
-    },
-    "IPA": {
-        origem: "Inglaterra",
-        caracteristicas: "Amarga, alta concentração de lúpulo, com notas cítricas e florais.",
-        harmonizacao: "Combina bem com pratos picantes, queijos fortes e pratos de carne grelhada.",
-        curiosidades: "IPA significa 'India Pale Ale' e foi desenvolvida para suportar longas viagens marítimas para a Índia durante o período colonial."
-    },
-    "Stout": {
-        origem: "Irlanda",
-        caracteristicas: "Escura, rica em sabor de café e chocolate, com um toque de amargor.",
-        harmonizacao: "Perfeita com sobremesas de chocolate, carnes grelhadas e pratos a base de feijão.",
-        curiosidades: "A Guinness é uma das stouts mais famosas do mundo e tem uma receita que remonta a 1759."
-    },
-    "Witbier": {
-        origem: "Bélgica",
-        caracteristicas: "Clara, com especiarias como coentro e casca de laranja, sabor leve e refrescante.",
-        harmonizacao: "Harmoniza com pratos leves, como frutos do mar e saladas, além de ser ótima com comida asiática.",
-        curiosidades: "Witbier significa 'cerveja branca' em holandês, e o estilo é conhecido por sua turbidez devido ao uso de trigo não maltado."
-    },
-    "Saison": {
-        origem: "Bélgica",
-        caracteristicas: "Temporada, geralmente de cor dourada, sabor frutado e especiado, com uma leve acidez.",
-        harmonizacao: "Combina bem com pratos de primavera e verão, como vegetais assados e queijos de cabra.",
-        curiosidades: "Originalmente, as saisons eram produzidas em pequenas quantidades para trabalhadores rurais durante a temporada de colheita."
-    }
-};
+    searchButton.addEventListener("click", function() {
+        const query = searchInput.value.trim().toLowerCase();
 
-// Adiciona o evento de clique no botão de pesquisa
-botaoPesquisar.addEventListener('click', function(event) {
-    event.preventDefault(); // Evita o recarregamento da página
+        // Limpe os resultados existentes
+        resultadosPesquisa.innerHTML = "";
 
-    const termoPesquisa = campoPesquisa.value.trim().toLowerCase(); // Obtém o valor do campo de pesquisa e transforma em minúsculas
-    if (termoPesquisa !== '') {
-        mostrarResultados(termoPesquisa); // Chama a função de exibição de resultados
-    } else {
-        // Se o campo estiver vazio, exibe uma mensagem
-        areaResultados.innerHTML = `<p>Por favor, insira um termo de pesquisa.</p>`;
-    }
+        if (query) {
+            // Filtra os dados com base na consulta
+            const resultados = dados.filter(dado => dado.titulo.toLowerCase().includes(query));
+
+            if (resultados.length > 0) {
+                // Construa o HTML para os resultados
+                resultados.forEach(dado => {
+                    const resultadoHTML = `
+                        <div class="item-resultado">
+                            <img src="${dado.titulo.toLowerCase().replace(/\s+/g, '-')}.jpg" alt="${dado.titulo}" style="width: 100px; height: auto;">
+                            <div class="descricao-resultado">
+                                <h2>${dado.titulo}</h2>
+                                <p>${dado.descricao}</p>
+                                <p><strong>Origem:</strong> ${dado.origem}</p>
+                                <p><strong>Características:</strong> ${dado.caracteristicas}</p>
+                                <p><strong>Harmonização:</strong> ${dado.harmonizacao}</p>
+                                <p><strong>Curiosidades:</strong> ${dado.curiosidades}</p>
+                                <a href="${dado.link}" target="_blank">Mais informações</a>
+                            </div>
+                        </div>
+                    `;
+                    resultadosPesquisa.innerHTML += resultadoHTML;
+                });
+
+                // Exibe a seção de resultados
+                resultadosPesquisa.style.display = "block";
+            } else {
+                // Se não houver resultados, exiba uma mensagem ou mantenha a área oculta
+                resultadosPesquisa.innerHTML = "<p>Nenhum resultado encontrado.</p>";
+                resultadosPesquisa.style.display = "block";
+            }
+        } else {
+            // Se a pesquisa estiver vazia, oculte a seção de resultados
+            resultadosPesquisa.style.display = "none";
+        }
+    });
 });
-
-// Função para exibir os resultados na página
-function mostrarResultados(filtro) {
-    // Limpa os resultados anteriores
-    areaResultados.innerHTML = '';
-
-    // Filtra os dados com base no termo de pesquisa
-    const resultado = estilosCerveja[filtro.charAt(0).toUpperCase() + filtro.slice(1)];
-
-    // Se não houver resultados, exibe uma mensagem
-    if (!resultado) {
-        areaResultados.innerHTML = `<p>Nenhum estilo de cerveja encontrado com o nome "${filtro}".</p>`;
-        return;
-    }
-
-    // Cria o elemento HTML para o resultado
-    const itemResultado = document.createElement('div');
-    itemResultado.classList.add('item-resultado');
-
-    const titulo = document.createElement('h2');
-    titulo.textContent = filtro.charAt(0).toUpperCase() + filtro.slice(1); // Capitaliza a primeira letra do estilo
-
-    const descricao = document.createElement('p');
-    descricao.classList.add('descricao-meta');
-    descricao.innerHTML = `
-        <strong>Origem:</strong> ${resultado.origem}<br>
-        <strong>Características:</strong> ${resultado.caracteristicas}<br>
-        <strong>Harmonização:</strong> ${resultado.harmonizacao}<br>
-        <strong>Curiosidades:</strong> ${resultado.curiosidades}
-    `;
-
-    itemResultado.appendChild(titulo);
-    itemResultado.appendChild(descricao);
-
-    areaResultados.appendChild(itemResultado);
-}
-
-       
 
 
