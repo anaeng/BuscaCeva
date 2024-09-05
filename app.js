@@ -1,14 +1,12 @@
-// Função de pesquisa
 function pesquisar() {
     // Obtém a seção HTML onde os resultados serão exibidos
     let section = document.getElementById("resultados-pesquisa");
 
-    // Obtém o valor da caixa de pesquisa usando o ID
-    let pesquisa = document.getElementById('pesquisa-input').value.toLowerCase();
-    console.log("Valor da pesquisa:", pesquisa);  // Adicionado para depuração
+    // Obtém o valor da caixa de pesquisa
+    let pesquisa = document.querySelector('input[type="text"]').value.toLowerCase();
 
     // Inicializa uma string vazia para armazenar os resultados
-    let resultadosHtml = "";
+    let resultados = "";
 
     // Itera sobre cada dado da lista de dados
     for (let dado of dados) {
@@ -35,19 +33,5 @@ function pesquisar() {
     // Atribui os resultados gerados à seção HTML
     section.innerHTML = resultadosHtml;
 
-    // Remove a classe 'oculto' para mostrar a seção de resultados
-    section.classList.remove('oculto');
-}
 
-// Adiciona o evento de clique no botão
-document.addEventListener('DOMContentLoaded', function() {
-    const botaoPesquisar = document.querySelector('button');
-
-    // Inicialmente oculta a caixa de resultados
-    const section = document.getElementById("resultados-pesquisa");
-    section.classList.add('oculto');
-
-    // Adiciona o evento de clique ao botão de pesquisa
-    botaoPesquisar.addEventListener('click', pesquisar);
-});
 
