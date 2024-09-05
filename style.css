@@ -92,18 +92,12 @@ section button:hover {
     display: none; /* Escondido por padrão */
     width: 100%; /* Largura total disponível */
     max-width: 60rem; /* Largura máxima da caixa de resultados */
-    height: 46vh; /* Altura máxima da caixa de resultados */
-    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
     margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
     padding: 1rem; /* Espaçamento interno */
     border-radius: 0.6rem; /* Borda arredondada */
-    
-    background-color: transparent; /* Fundo transparente */
-    border: none; /* Remove qualquer borda */
-    box-shadow: none; /* Remove sombras, se houver */
-    
-    /*background-color: rgba(255, 255, 255, 0.8); /* Fundo branco translúcido */
-    /*box-sizing: border-box; /* Inclui padding e border na largura total */
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco translúcido */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
 }
 
 /* Para mostrar a caixa */
@@ -113,8 +107,6 @@ section button:hover {
 
 /* Estiliza cada item de resultado */
 .item-resultado {
-    display: flex; /* Usa Flexbox para layout */
-    align-items: center; /* Alinha verticalmente o conteúdo */
     background: #FFFFFF; /* Cor de fundo dos itens */
     border-radius: 0.6rem; /* Borda arredondada */
     padding: 1rem; /* Espaçamento interno */
@@ -122,13 +114,15 @@ section button:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
     width: 100%; /* Largura total disponível */
     box-sizing: border-box; /* Inclui padding e border na largura total */
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Organiza o texto em coluna */
 }
 
 /* Estiliza a imagem ao lado da descrição */
 .item-resultado img {
     width: 100px; /* Largura da imagem */
     height: auto; /* Mantém a proporção da imagem */
-    margin-right: 1rem; /* Espaçamento entre a imagem e a descrição */
+    margin-bottom: 1rem; /* Espaçamento abaixo da imagem */
     border-radius: 0.3rem; /* Borda arredondada da imagem */
 }
 
@@ -180,5 +174,23 @@ footer {
     width: 100%; /* Garante que o rodapé ocupe a largura total disponível */
     box-sizing: border-box; /* Inclui padding e border na largura total */
     margin: 0 auto; /* Centraliza o rodapé */
+}
+
+/* Media queries para ajustar o layout em dispositivos móveis */
+@media (max-width: 768px) {
+    /* Ajusta a largura da caixa de resultados */
+    .resultados-pesquisa {
+        max-width: 100%; /* Garante que a caixa de resultados ocupe toda a largura disponível */
+    }
+
+    /* Ajusta o layout dos itens de resultado */
+    .item-resultado {
+        flex-direction: column; /* Organiza o texto em coluna */
+        align-items: flex-start; /* Alinha o conteúdo à esquerda */
+    }
+
+    .item-resultado img {
+        width: 80px; /* Ajusta a largura da imagem para telas menores */
+    }
 }
 
