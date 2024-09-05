@@ -1,16 +1,16 @@
 function pesquisar() {
     // Obtém a seção HTML onde os resultados serão exibidos
-    let section = document.getElementById("resultados-pesquisa");
+    const section = document.getElementById("resultados-pesquisa");
     
     // Obtém o valor do campo de pesquisa
-    let input = document.querySelector('section input');
-    let busca = input.value.trim().toLowerCase();
+    const input = document.querySelector('section input');
+    const busca = input.value.trim().toLowerCase();
 
     // Adiciona um log para depuração
     console.log('Valor da busca:', busca);
     
     // Filtra os dados com base na busca
-    let resultados = dados.filter(dado => dado.titulo.toLowerCase().includes(busca));
+    const resultados = dados.filter(dado => dado.titulo.toLowerCase().includes(busca));
 
     // Adiciona um log para depuração
     console.log('Resultados encontrados:', resultados);
@@ -39,4 +39,7 @@ function pesquisar() {
     // Atribui os resultados gerados à seção HTML
     section.innerHTML = resultadosHtml;
 }
+
+// Certifique-se de que a função é chamada quando o botão é clicado
+document.querySelector('button').addEventListener('click', pesquisar);
 
