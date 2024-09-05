@@ -5,6 +5,7 @@ function pesquisar() {
 
     // Obtém o valor da caixa de pesquisa usando o ID
     let pesquisa = document.getElementById('pesquisa-input').value.toLowerCase();
+    console.log("Valor da pesquisa:", pesquisa);  // Adicionado para depuração
 
     // Inicializa uma string vazia para armazenar os resultados
     let resultadosHtml = "";
