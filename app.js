@@ -1,9 +1,9 @@
-// Obtém referências aos elementos HTML
-const input = document.querySelector('input[type="text"]');
-const button = document.querySelector('button');
-const resultadosPesquisa = document.querySelector('.resultados-pesquisa');
+// Obtém o botão e o campo de entrada do DOM
+const searchButton = document.querySelector('button');
+const inputField = document.querySelector('input');
+const resultsContainer = document.querySelector('.resultados-pesquisa');
 
-// Dados de cervejas (os mesmos que você forneceu)
+// Dados da cerveja
 const dados = [
     {
         titulo: "Pilsen",
@@ -52,32 +52,37 @@ const dados = [
     }
 ];
 
+// Função para criar um item de resultado
+function createResultItem(item) {
+    const resultItem = document.createElement('div');
+    resultItem.classList.add('item-resultado');
+
+    resultItem.innerHTML = `
+        <h2>${item.titulo}</h2>
+        <p class="descricao-meta">${item.descricao}</p>
+        <p><strong>Origem:</strong> ${item.origem}</p>
+        <p><strong>Características:</strong> ${item.caracteristicas}</p>
+        <p><strong>Harmonização:</strong> ${item.harmonizacao}</p>
+        <p><strong>Curiosidades:</strong> ${item.curiosidades}</p>
+        <a href="${item.link}" target="_blank">Leia mais</a>
+    `;
+
+    return resultItem;
+}
+
 // Função para exibir os resultados
-function exibirResultados(dados) {
-    resultadosPesquisa.innerHTML = ''; // Limpa resultados anteriores
-
-    dados.forEach(dado => {
-        const item = document.createElement('div');
-        item.className = 'item-resultado';
-
-        item.innerHTML = `
-            <h2>${dado.titulo}</h2>
-            <p class="descricao-meta">${dado.descricao}</p>
-            <p><strong>Origem:</strong> ${dado.origem}</p>
-            <p><strong>Características:</strong> ${dado.caracteristicas}</p>
-            <p><strong>Harmonização:</strong> ${dado.harmonizacao}</p>
-            <p><strong>Curiosidades:</strong> ${dado.curiosidades}</p>
-            <a href="${dado.link}" target="_blank">Saiba mais</a>
-        `;
-
-        resultadosPesquisa.appendChild(item);
+function showResults(results) {
+    resultsContainer.innerHTML = ''; // Limpa os resultados anteriores
+    results.forEach(item => {
+        const resultItem = createResultItem(item);
+        resultsContainer.appendChild(resultItem);
     });
 }
 
-// Adiciona o evento de clique no botão
-button.addEventListener('click', () => {
-    const valor = input.value.toLowerCase();
-    const resultados = dados.filter(dado => dado.titulo.toLowerCase().includes(valor) || dado.descricao.toLowerCase().includes(valor));
-    exibirResultados(resultados);
+// Adiciona o evento de clique ao botão
+searchButton.addEventListener('click', () => {
+    const query = inputField.value.trim().toLowerCase();
+    const filteredResults = dados.filter(item => item.titulo.toLowerCase().includes(query));
+    showResults(filteredResults);
 });
 
