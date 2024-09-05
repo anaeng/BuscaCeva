@@ -89,6 +89,7 @@ section button:hover {
 
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
+    display: none; /* Escondido por padrão */
     width: 100%; /* Largura total disponível */
     max-width: 60rem; /* Largura máxima da caixa de resultados */
     height: 46vh; /* Altura máxima da caixa de resultados */
@@ -98,6 +99,11 @@ section button:hover {
     border-radius: 0.6rem; /* Borda arredondada */
     background-color: rgba(255, 255, 255, 0.8); /* Fundo branco translúcido */
     box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Para mostrar a caixa */
+.mostrar {
+    display: block; /* Mostra a caixa */
 }
 
 /* Estiliza cada item de resultado */
