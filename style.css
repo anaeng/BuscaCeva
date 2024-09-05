@@ -90,7 +90,7 @@ section button {
     padding: 1rem; /* Espaçamento interno */
     border-radius: 0.6rem; /* Borda arredondada */
     box-sizing: border-box; /* Inclui padding e border na largura total */
-    background-color: #ffffff; /* Cor de fundo branca */
+    background-color: #ffffe0; /* Cor de fundo amarelo claro */
 }
 
 /* Estiliza cada item de resultado */
