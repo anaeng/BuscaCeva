@@ -27,6 +27,15 @@ let dados = [
         curiosidades: "O estilo Stout foi popularizado por Arthur Guinness, fundador da cervejaria Guinness, no século XVIII.",
         link: "https://gastronomiacarioca.zonasul.com.br/stout-cerveja/#:~:text=Caracter%C3%ADsticas%20de%20uma%20Stout,sabores%20de%20cacau%20e%20caf%C3%A9."
     },
+     {
+        titulo: "Imperial Stout",
+        descricao: "A Imperial Stout é uma versão mais intensa e robusta da Stout tradicional. Originária da Inglaterra, é conhecida pelo seu corpo cheio, notas intensas de café, chocolate amargo e toffee, e teor alcoólico mais alto. Ideal para quem aprecia cervejas complexas e encorpadas.",
+        origem: "Inglaterra",
+        caracteristicas: "Escura, encorpada, com notas intensas de café, chocolate amargo e toffee",
+        harmonizacao: "Ótima com sobremesas ricas como tortas de chocolate e queijos fortes. Também combina bem com pratos de carne mais robustos.",
+        curiosidades: "A Imperial Stout foi desenvolvida no século XVIII para exportação para a Rússia, com um teor alcoólico mais alto para suportar o transporte e o clima frio.",
+        link: "https://cervejaemalte.com.br/blog/imperial-stout-um-estudo-completo-sobre-o-estilo/"
+    },
     {
         titulo: "Weissbier",
         descricao: "A Weissbier, também conhecida como cerveja de trigo, é um estilo de cerveja de origem alemã. É turva e tem um sabor frutado, com notas de banana e cravo devido ao uso de leveduras especiais. É refrescante e leve, ideal para o verão.",
