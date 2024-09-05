@@ -53,6 +53,7 @@ let dados = [
         harmonizacao: "Acompanha pratos com especiarias, pratos de legumes e queijos curados.",
         curiosidades: "Originalmente, era feita para ser consumida durante o verão e distribuída para os trabalhadores das fazendas na Bélgica.",
         link: "https://centralbrew.com.br/blog/serie-estilos-de-cerveja-conheca-a-saison/"
+    },
     {
         titulo: "Amber Ale",
         descricao: "A Amber Ale é uma cerveja de cor âmbar a cobre, com um equilíbrio entre malte e lúpulo. Possui um sabor suave de caramelo e um leve amargor.",
