@@ -1,29 +1,14 @@
-// Seleciona o botão de pesquisa e o campo de input
 const botaoPesquisar = document.querySelector('button');
 const campoPesquisa = document.querySelector('input');
 
 // Seleciona a área de resultados
 const areaResultados = document.querySelector('.resultados-pesquisa');
 
-// Adiciona o evento de clique no botão de pesquisa
-botaoPesquisar.addEventListener('click', function(event) {
-    event.preventDefault(); // Evita o recarregamento da página
-
-    const termoPesquisa = campoPesquisa.value.trim(); // Obtém o valor do campo de pesquisa
-    console.log('Termo de pesquisa:', termoPesquisa); // Depuração: exibe o termo de pesquisa
-
-    if (termoPesquisa !== '') {
-        mostrarResultados(termoPesquisa); // Chama a função de exibição de resultados
-    } else {
-        // Se o campo estiver vazio, exibe uma mensagem
-        areaResultados.innerHTML = `<p>Por favor, insira um termo de pesquisa.</p>`;
-    }
-});
+// Limpa a área de resultados ao carregar a página
+areaResultados.innerHTML = ''; // Garante que a área de resultados comece vazia
 
 // Função para exibir os resultados na página
 function mostrarResultados(filtro) {
-    console.log('Filtro aplicado:', filtro); // Depuração: exibe o filtro aplicado
-
     // Limpa os resultados anteriores
     areaResultados.innerHTML = '';
 
@@ -32,11 +17,9 @@ function mostrarResultados(filtro) {
         item.titulo.toLowerCase().includes(filtro.toLowerCase())
     );
 
-    console.log('Resultados filtrados:', resultadosFiltrados); // Depuração: exibe os resultados filtrados
-
     // Se não houver resultados, exibe uma mensagem
     if (resultadosFiltrados.length === 0) {
-        areaResultados.innerHTML = `<p>Nenhum resultado encontrado.</p>`;
+        areaResultados.innerHTML = <p>Nenhum resultado encontrado.</p>;
         return;
     }
 
@@ -71,4 +54,36 @@ function mostrarResultados(filtro) {
         areaResultados.appendChild(itemResultado);
     });
 }
+
+// Adiciona o evento de clique no botão de pesquisa 
+botaoPesquisar.addEventListener('click', function(event) {
+    event.preventDefault(); // Evita o recarregamento da página
+
+    const termoPesquisa = campoPesquisa.value.trim(); // Obtém o valor do campo de pesquisa
+    if (termoPesquisa !== '') {
+        mostrarResultados(termoPesquisa); // Chama a função de exibição de resultados
+    } else {
+        // Se o campo estiver vazio, exibe uma mensagem  também tenho outro js chamado dados esses todos que ficm aparecendo na tela let dados = [
+    {
+        titulo: "Rayssa Leal",
+        descricao: "Rayssa Leal, a Fadinha, é uma skatista brasileira que conquistou o mundo com seu talento e carisma. Aos poucos anos, ela já coleciona títulos e inspira milhões de jovens.",
+        link: "https://pt.wikipedia.org/wiki/Rayssa_Leal"
+    },
+    {
+        titulo: "Beatriz Souza",
+        descricao: "Beatriz Souza é uma judoca brasileira que se destacou nos Jogos Olímpicos de Paris 2024, conquistando a medalha de ouro e inspirando novas gerações de atletas.",
+        link: "https://pt.wikipedia.org/wiki/Beatriz_Souza"
+    },
+    {
+        titulo: "Rebeca Andrade",
+        descricao: "Rebeca Andrade é uma ginasta brasileira que conquistou o mundo com suas acrobacias e força. Aos poucos anos, ela já coleciona títulos e é considerada uma das maiores ginastas da história do Brasil.",
+        link: "https://pt.wikipedia.org/wiki/Rebeca_Andrade"
+    }
+];
+
+ChatGPT said:
+ChatGPT
+Se você está vendo os resultados na tela sem precisar procurar, pode ser que a função mostrarResultados esteja sendo chamada automaticamente quando a página carrega, ou o estado inicial da área de resultados não está correto.
+
+Aqui estão algumas sugestões para corrigir o problema:
 
