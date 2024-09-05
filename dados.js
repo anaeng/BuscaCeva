@@ -8,7 +8,6 @@ let dados = [
         harmonizacao: "Acompanha bem pratos leves como saladas e frutos do mar.",
         curiosidades: "Foi criada na cidade de Pilsen, em 1842, e é uma das cervejas mais consumidas no mundo.",
         link: "https://pt.wikipedia.org/wiki/Cerveja_Pilsen#:~:text=Pilsen%20ou%20Pilsener%20%C3%A9%20um,Checa)%20por%20volta%20de%201840."
-        imagem: "pilsen.jpg" // Adicione o caminho da imagem aqui
     },
     {
         titulo: "IPA (India Pale Ale)",
