@@ -8,7 +8,7 @@ body {
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
     justify-content: center; /* Centraliza os itens verticalmente */
-    height: 100vh; /* Preenche a altura total da viewport */
+    min-height: 100vh; /* Garante que o corpo ocupe pelo menos a altura da viewport */
     margin: 0;
     padding: 0;
     background-image: url('ceva.jpg');
@@ -16,35 +16,27 @@ body {
     background-position: center center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita a repetição da imagem */
     background-attachment: fixed; /* A imagem de fundo não se move ao rolar a página */
-    
- /* Responsividade da imagem de fundo */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  /* Adicionando flexbox para melhor controle do layout */
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 }
 
 /* Centralizando o conteúdo */
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 100%; /* Garante que o container ocupe a largura total disponível */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
 }
 
 /* Media queries para ajustar o layout em diferentes tamanhos de tela */
 @media (max-width: 768px) {
-  /* Estilos para dispositivos móveis */
-  body {
-    padding: 1rem;
-  }
-  .container {
-    padding: 1rem;
-  }
-  /* Outros ajustes para dispositivos móveis */
-}
+    /* Estilos para dispositivos móveis */
+    body {
+        padding: 1rem;
+    }
+    .container {
+        padding: 1rem;
+    }
+    /* Outros ajustes para dispositivos móveis */
 }
 
 /* Estiliza os títulos h1 */
@@ -61,11 +53,14 @@ section {
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
     margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
+    width: 100%; /* Garante que as seções ocupem a largura total disponível */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
 }
 
 /* Estiliza os inputs dentro das seções */
 section input {
-    width: 30rem; /* Largura dos inputs */
+    width: 100%; /* Largura total disponível */
+    max-width: 30rem; /* Largura máxima dos inputs */
     border: none; /* Remove a borda padrão */
     padding: 1rem; /* Espaçamento interno */
     border-radius: 1.5rem; /* Borda arredondada */
@@ -88,12 +83,14 @@ section button {
 
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
-    width: 60rem; /* Largura máxima da caixa de resultados */
+    width: 100%; /* Largura total disponível */
+    max-width: 60rem; /* Largura máxima da caixa de resultados */
     height: 46vh; /* Altura máxima da caixa de resultados */
     overflow-y: auto; /* Adiciona rolagem vertical se necessário */
     margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
     padding: 1rem; /* Espaçamento interno */
     border-radius: 0.6rem; /* Borda arredondada */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
 }
 
 /* Estiliza cada item de resultado */
@@ -105,6 +102,8 @@ section button {
     padding: 1rem; /* Espaçamento interno */
     margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    width: 100%; /* Largura total disponível */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
 }
 
 /* Estiliza a imagem ao lado da descrição */
@@ -159,9 +158,14 @@ footer {
     text-align: center; /* Centraliza o texto */
     font-size: 12px; /* Ajusta o tamanho da fonte */
     color: #333; /* Cor do texto */
-    border-top: 1px solid #ccc; /* Adiciona uma borda superior sutil, se desejado */
+    border-top: 1px solid #ccc; /* Adiciona uma borda superior sutil */
+    width: 100%; /* Garante que o rodapé ocupe a largura total disponível */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+    position: absolute; /* Garante que o rodapé esteja fixado na parte inferior */
+    bottom: 0; /* Posiciona o rodapé no fundo da página */
 }
 
+/* Estiliza o conteúdo do rodapé */
 footer p {
     margin: 0; /* Remove a margem padrão dos parágrafos */
 }
