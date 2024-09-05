@@ -19,6 +19,9 @@ body {
 /* Estiliza a área principal */
 main {
     flex: 1; /* Faz com que o main cresça para preencher o espaço disponível */
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
 }
 
 /* Centralizando o conteúdo */
@@ -28,14 +31,6 @@ main {
     padding: 2rem;
     width: 100%; /* Garante que o container ocupe a largura total disponível */
     box-sizing: border-box; /* Inclui padding e border na largura total */
-}
-
-/* Media queries para ajustar o layout do rodapé em diferentes tamanhos de tela */
-@media (max-width: 768px) {
-    footer {
-        padding: 3px 5px; /* Ajuste o padding para telas menores */
-        font-size: 13px; /* Reduza o tamanho da fonte em telas menores */
-    }
 }
 
 /* Estiliza os títulos h1 */
@@ -91,7 +86,7 @@ section button:hover {
 .resultados-pesquisa {
     display: none; /* Escondido por padrão */
     width: 100%; /* Largura total disponível */
-    max-width: 60rem; /* Largura máxima da caixa de resultados */
+    max-width: 100%; /* Garante que a caixa de resultados não ultrapasse a largura da tela */
     margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
     padding: 1rem; /* Espaçamento interno */
     border-radius: 0.6rem; /* Borda arredondada */
@@ -114,8 +109,6 @@ section button:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
     width: 100%; /* Largura total disponível */
     box-sizing: border-box; /* Inclui padding e border na largura total */
-    display: flex; /* Usa Flexbox para layout */
-    flex-direction: column; /* Organiza o texto em coluna */
 }
 
 /* Estiliza a imagem ao lado da descrição */
