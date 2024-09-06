@@ -118,31 +118,31 @@ let dados = [
         link: "https://www.cervejamarimbondo.com/post/cream-ale#google_vignette"
     },
     {
-    titulo: "Doppelbock",
-    descricao: "A Doppelbock é uma versão mais forte da Bock, uma cerveja tradicional alemã. Tem um sabor encorpado e maltado, com notas de caramelo, chocolate e frutas secas. Geralmente possui uma coloração de âmbar escuro a marrom e um teor alcoólico mais elevado.",
-    origem: "Alemanha",
-    caracteristicas: "Encorpada, maltada, com notas de caramelo e frutas secas",
-    harmonizacao: "Combina bem com carnes assadas, queijos fortes e sobremesas à base de chocolate.",
-    curiosidades: "Originalmente criada por monges na Alemanha para ser consumida durante o jejum, a Doppelbock é conhecida como 'pão líquido'.",
-    link: "https://pt.wikipedia.org/wiki/Doppelbock"
+        titulo: "Doppelbock",
+        descricao: "A Doppelbock é uma versão mais forte da Bock, uma cerveja tradicional alemã. Tem um sabor encorpado e maltado, com notas de caramelo, chocolate e frutas secas. Geralmente possui uma coloração de âmbar escuro a marrom e um teor alcoólico mais elevado.",
+        origem: "Alemanha",
+        caracteristicas: "Encorpada, maltada, com notas de caramelo e frutas secas",
+        harmonizacao: "Combina bem com carnes assadas, queijos fortes e sobremesas à base de chocolate.",
+        curiosidades: "Originalmente criada por monges na Alemanha para ser consumida durante o jejum, a Doppelbock é conhecida como 'pão líquido'.",
+        link: "https://pt.wikipedia.org/wiki/Doppelbock"
     } 
     {    
-    titulo: "Tripel",
-    descricao: "A Tripel é uma cerveja belga clara e complexa, com notas frutadas e picantes. Geralmente possui um teor alcoólico elevado e é conhecida por sua leveza e drinkability, apesar de sua força.",
-    origem: "Bélgica",
-    caracteristicas: "Frutada, picante, com teor alcoólico elevado",
-    harmonizacao: "Acompanha bem frutos do mar, queijos suaves e pratos levemente apimentados.",
-    curiosidades: "O nome 'Tripel' vem do fato de que a cerveja é tradicionalmente feita com três vezes mais malte, resultando em uma bebida mais forte.",
-    link: "https://centralbrew.com.br/blog/serie-estilos-de-cerveja-conheca-a-tripel"
+        titulo: "Tripel",
+        descricao: "A Tripel é uma cerveja belga clara e complexa, com notas frutadas e picantes. Geralmente possui um teor alcoólico elevado e é conhecida por sua leveza e drinkability, apesar de sua força.",
+        origem: "Bélgica",
+        caracteristicas: "Frutada, picante, com teor alcoólico elevado",
+        harmonizacao: "Acompanha bem frutos do mar, queijos suaves e pratos levemente apimentados.",
+        curiosidades: "O nome 'Tripel' vem do fato de que a cerveja é tradicionalmente feita com três vezes mais malte, resultando em uma bebida mais forte.",
+        link: "https://centralbrew.com.br/blog/serie-estilos-de-cerveja-conheca-a-tripel"
     },
     {
-    titulo: "Vienna Lager",
-    descricao: "A Vienna Lager é uma cerveja de coloração âmbar, com um perfil maltado e levemente tostado. Originária da Áustria, possui um sabor equilibrado com notas suaves de caramelo e um final seco.",
-    origem: "Áustria",
-    caracteristicas: "Maltada, com notas de caramelo e leve tostado",
-    harmonizacao: "Combina com pratos de carne assada, salsichas e pretzels.",
-    curiosidades: "Foi desenvolvida em Viena por Anton Dreher no século XIX e inspirou o estilo Lager mexicano, popularizado por cervejarias como a Dos Equis.",
-    link: "https://www.clubedomalte.com.br/mybeerclass/vienna-lager"
+        titulo: "Vienna Lager",
+        descricao: "A Vienna Lager é uma cerveja de coloração âmbar, com um perfil maltado e levemente tostado. Originária da Áustria, possui um sabor equilibrado com notas suaves de caramelo e um final seco.",
+        origem: "Áustria",
+        caracteristicas: "Maltada, com notas de caramelo e leve tostado",
+        harmonizacao: "Combina com pratos de carne assada, salsichas e pretzels.",
+        curiosidades: "Foi desenvolvida em Viena por Anton Dreher no século XIX e inspirou o estilo Lager mexicano, popularizado por cervejarias como a Dos Equis.",
+        link: "https://www.clubedomalte.com.br/mybeerclass/vienna-lager"
     }
 ];
 
