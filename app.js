@@ -15,12 +15,11 @@ function pesquisar() {
             // Cria um novo elemento HTML para cada resultado
             resultados += `
                 <div class="item-resultado">
-                    <h2><a href="${dado.link}" target="_blank">${dado.titulo}</a></h2>
-                    <p><strong>Descrição:</strong> ${dado.descricao}</p>
-                    <p><strong>Origem:</strong> ${dado.origem}</p>
-                    <p><strong>Características:</strong> ${dado.caracteristicas}</p>
-                    <p><strong>Harmonização:</strong> ${dado.harmonizacao}</p>
-                    <p><strong>Curiosidades:</strong> ${dado.curiosidades}</p>
+                    <h2>
+                        <a href="${dado.link}" target="_blank">${dado.titulo}</a>
+                    </h2>
+                    <p class="descricao-meta">${dado.descricao}</p>
+                    <a href="${dado.link}" target="_blank">Mais informações</a>
                 </div>
             `;
         }
