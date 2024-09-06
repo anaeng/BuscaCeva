@@ -33,3 +33,4 @@ function pesquisar() {
     // Atribui os resultados gerados à seção HTML
     section.innerHTML = resultados;
 }
+
