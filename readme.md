@@ -5,7 +5,7 @@ O **BuscaCeva** é uma plataforma interativa desenvolvida para entusiastas da ce
 **Funcionalidades Principais:**
 - **Busca por Estilos de Cerveja:** Filtre e explore uma ampla gama de estilos, como Pilser, IPA, Stout, e muito mais.
 - **Informações Detalhadas:** Acesse descrições detalhadas e características dos diferentes estilos de cerveja.
-- **Interface Simples e Intuitiva:** Navegação fácil com um design amigável para todos os níveis de usuários.
+- **Interface Simples e Intuitiva:** Navegação fácil com um design amigável, a plataforma foi projetada para oferecer uma experiência fluida tanto em desktop quanto em dispositivos móveis.
 - **Atualizações Constantes:** O site será atualizado regularmente com novos estilos e informações para manter o conteúdo atual e relevante.
 
 **Tecnologias Utilizadas:**
