@@ -147,7 +147,7 @@ section button {
 .mensagem-erro {
     color: white; /* Cor do texto da mensagem de erro */
     margin-top: 0.5rem; /* Ajusta a margem superior para posicionar o texto mais próximo do botão */
-    font-size: 0.9rem; /* Ajusta o tamanho da fonte se necessário */
+    font-size: 1.2rem; /* Ajusta o tamanho da fonte se necessário */
     text-align: center; /* Centraliza o texto da mensagem de erro */
 }
 
