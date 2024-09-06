@@ -1,3 +1,4 @@
+// Função de pesquisa
 function pesquisar() {
     // Obtém a seção HTML onde os resultados serão exibidos
     let section = document.getElementById("resultados-pesquisa");
@@ -30,7 +31,18 @@ function pesquisar() {
         resultados = `<p class="mensagem-erro">Nenhum resultado encontrado para "${pesquisa}".</p>`;
     }
 
-    // Atribui os resultados gerados à seção HTML
+    // Atribui os resultados gerados à seção HTML e exibe a seção
     section.innerHTML = resultados;
+    section.style.display = "block"; // Mostra a seção de resultados
 }
+
+// Vincula a função de pesquisa ao botão "Pesquisar"
+document.getElementById("pesquisar-btn").addEventListener("click", pesquisar);
+
+// Opcional: Permite a pesquisa ao pressionar a tecla "Enter"
+document.getElementById("pesquisa-input").addEventListener("keyup", function (event) {
+    if (event.key === "Enter") {
+        pesquisar();
+    }
+});
 
