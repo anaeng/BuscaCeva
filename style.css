@@ -84,7 +84,8 @@ section button {
 .resultados-pesquisa {
     width: 100%; /* Largura total disponível */
     max-width: 60rem; /* Largura máxima da caixa de resultados */
-    height: 46vh; /* Altura máxima da caixa de resultados */
+    min-height: 10rem; /* Altura mínima da caixa de resultados */
+    height: auto; /* Altura ajusta-se automaticamente ao conteúdo */
     overflow-y: auto; /* Adiciona rolagem vertical se necessário */
     margin: 1rem auto; /* Centraliza a caixa de resultados e adiciona espaçamento superior */
     padding: 1rem; /* Espaçamento interno */
@@ -146,7 +147,8 @@ section button {
 .mensagem-erro {
     color: red; /* Cor do texto da mensagem de erro */
     margin-top: 0.5rem; /* Ajusta a margem superior para posicionar o texto mais próximo do botão */
-    font-size: 1rem; /* Ajusta o tamanho da fonte se necessário */
+    font-size: 0.9rem; /* Ajusta o tamanho da fonte se necessário */
+    text-align: center; /* Centraliza o texto da mensagem de erro */
 }
 
 /* Estiliza o rodapé da página */
