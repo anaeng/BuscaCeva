@@ -125,15 +125,6 @@ let dados = [
         harmonizacao: "Combina bem com carnes assadas, queijos fortes e sobremesas à base de chocolate.",
         curiosidades: "Originalmente criada por monges na Alemanha para ser consumida durante o jejum, a Doppelbock é conhecida como 'pão líquido'.",
         link: "https://pt.wikipedia.org/wiki/Doppelbock"
-    } 
-    {    
-        titulo: "Tripel",
-        descricao: "A Tripel é uma cerveja belga clara e complexa, com notas frutadas e picantes. Geralmente possui um teor alcoólico elevado e é conhecida por sua leveza e drinkability, apesar de sua força.",
-        origem: "Bélgica",
-        caracteristicas: "Frutada, picante, com teor alcoólico elevado",
-        harmonizacao: "Acompanha bem frutos do mar, queijos suaves e pratos levemente apimentados.",
-        curiosidades: "O nome 'Tripel' vem do fato de que a cerveja é tradicionalmente feita com três vezes mais malte, resultando em uma bebida mais forte.",
-        link: "https://centralbrew.com.br/blog/serie-estilos-de-cerveja-conheca-a-tripel"
     },
     {
         titulo: "Vienna Lager",
