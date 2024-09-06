@@ -11,7 +11,8 @@ function pesquisar() {
 
     // Itera sobre cada dado da lista de dados
     for (let dado of dados) {
-        // Se o campo de pesquisa estiver vazio ou o título incluir o texto da pesquisa, adiciona o resultado
+        // Se o campo de pesquisa estiver vazio, exibe todos os resultados
+        // Caso contrário, exibe apenas os resultados que incluam o termo pesquisado
         if (pesquisa === "" || dado.titulo.toLowerCase().includes(pesquisa)) {
             resultados += `
                 <div class="item-resultado">
@@ -26,7 +27,7 @@ function pesquisar() {
         }
     }
 
-    // Se não houver resultados, exibe uma mensagem
+    // Se não houver resultados para o termo pesquisado, exibe uma mensagem
     if (resultados === "") {
         resultados = `<p class="mensagem-erro">Nenhum resultado encontrado para "${pesquisa}".</p>`;
     }
