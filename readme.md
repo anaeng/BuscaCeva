@@ -23,4 +23,4 @@ Toda contribuição é bem-vinda!
 
 **Agradecimentos:**
 
-Agradeço à Alura, ao Google Gemini e a toda a comunidade open source pelo conhecimento e suporte contínuos.
+Agradeço à Alura, ao Google Gemini e a toda a comunidade open source pelo conhecimento e suporte.
