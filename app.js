@@ -26,28 +26,12 @@ function pesquisar() {
         }
     }
 
-    // Se não houver resultados para o termo pesquisado, exibe uma mensagem
+    // Se não houver resultados, exibe uma mensagem
     if (resultados === "") {
         resultados = `<p class="mensagem-erro">Nenhum resultado encontrado para "${pesquisa}".</p>`;
     }
 
     // Atribui os resultados gerados à seção HTML
     section.innerHTML = resultados;
-
-    // Remove a classe 'oculto' para mostrar a seção de resultados
-    section.classList.remove('oculto');
 }
-
-// Adiciona o evento de clique no botão
-document.addEventListener('DOMContentLoaded', function() {
-    const botaoPesquisar = document.querySelector('button');
-
-    // Inicialmente oculta a caixa de resultados
-    const section = document.getElementById("resultados-pesquisa");
-    section.classList.add('oculto');
-
-    // Adiciona o evento de clique ao botão de pesquisa
-    botaoPesquisar.addEventListener('click', pesquisar);
-});
-
 
