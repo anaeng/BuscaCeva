@@ -1,10 +1,9 @@
-// Função de pesquisa
 function pesquisar() {
     // Obtém a seção HTML onde os resultados serão exibidos
     let section = document.getElementById("resultados-pesquisa");
 
-    // Obtém o valor da caixa de pesquisa
-    let pesquisa = document.querySelector('input[type="text"]').value.toLowerCase();
+    // Obtém o valor da caixa de pesquisa e converte para minúsculas
+    let pesquisa = document.querySelector('input[type="text"]').value.toLowerCase().trim();
 
     // Inicializa uma string vazia para armazenar os resultados
     let resultados = "";
@@ -19,11 +18,12 @@ function pesquisar() {
                     <h2>
                         <a href="${dado.link}" target="_blank">${dado.titulo}</a>
                     </h2>
-                    <p><strong>Descrição:</strong> ${dado.descricao}</p>
+                    <p class="descricao-meta">${dado.descricao}</p>
                     <p><strong>Origem:</strong> ${dado.origem}</p>
                     <p><strong>Características:</strong> ${dado.caracteristicas}</p>
                     <p><strong>Harmonização:</strong> ${dado.harmonizacao}</p>
                     <p><strong>Curiosidades:</strong> ${dado.curiosidades}</p>
+                    <a href="${dado.link}" target="_blank">Mais informações</a>
                 </div>
             `;
         }
