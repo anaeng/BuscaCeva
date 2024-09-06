@@ -1,4 +1,3 @@
-// Função de pesquisa
 function pesquisar() {
     // Obtém a seção HTML onde os resultados serão exibidos
     let section = document.getElementById("resultados-pesquisa");
@@ -11,9 +10,9 @@ function pesquisar() {
 
     // Itera sobre cada dado da lista de dados
     for (let dado of dados) {
-        // Se o campo de pesquisa estiver vazio, exibe todos os resultados
-        // Caso contrário, exibe apenas os resultados que incluam o termo pesquisado
-        if (pesquisa === "" || dado.titulo.toLowerCase().includes(pesquisa)) {
+        // Verifica se o título do dado contém o texto de pesquisa
+        if (dado.titulo.toLowerCase().includes(pesquisa)) {
+            // Cria um novo elemento HTML para cada resultado
             resultados += `
                 <div class="item-resultado">
                     <h2><a href="${dado.link}" target="_blank">${dado.titulo}</a></h2>
