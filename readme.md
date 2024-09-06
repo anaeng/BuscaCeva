@@ -9,8 +9,8 @@ O **BuscaCeva** é uma plataforma interativa desenvolvida para entusiastas da ce
 - **Atualizações Constantes:** O site será atualizado regularmente com novos estilos e informações para manter o conteúdo atual e relevante.
 
 **Tecnologias Utilizadas:**
-- **Frontend:** HTML, CSS, JavaScript
-- **APIs externas:** Google Gemini 
+-  HTML, CSS, JavaScript
+-  Google Gemini 
 
 **Como Usar:**
 1. Acesse o site https://anaeng.github.io/BuscaCeva/
