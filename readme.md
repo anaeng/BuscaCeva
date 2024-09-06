@@ -19,7 +19,7 @@ O **BuscaCeva** é uma plataforma interativa desenvolvida para entusiastas da ce
 
 **Contribuições:**
 
-Contribuições são bem-vindas! Se você encontrar algum bug ou tiver alguma sugestão, por favor, abra uma issue.
+Toda contribuição é bem-vinda!
 
 **Agradecimentos:**
 
