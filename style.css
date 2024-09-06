@@ -91,14 +91,9 @@ section button {
     border-radius: 0.6rem; /* Borda arredondada */
     box-sizing: border-box; /* Inclui padding e border na largura total */
     background-color: #ffffe0; /* Cor de fundo branca */
-    /* Adiciona a classe oculto para esconder a caixa inicialmente */
     display: none; /* Esconde a caixa de resultados inicialmente */
 }
 
-/* Adiciona uma classe para ocultar a caixa de resultados */
-.oculto {
-    display: none; /* Esconde o elemento */
-}
 /* Estiliza cada item de resultado */
 .item-resultado {
     display: flex; /* Usa Flexbox para layout */
